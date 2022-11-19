@@ -23,12 +23,12 @@ export default function Usuario() {
 
     function alteraImagem() {
         const url = prompt("Qual a URL da nova imagem?");
-        setImagem(url);
+        setImagem(!url ? imagem : url);
     }
 
     function alteraApelido() {
         const novoApelido = prompt("Qual o novo apelido?");
-        setApelido(novoApelido);
+        setApelido(!novoApelido ? apelido : novoApelido);
     }
 
     return (
